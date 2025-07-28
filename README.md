@@ -2,6 +2,8 @@
 
 # Dharsan B - Portfolio Website
 
+![Portfolio Screenshot](images/screenshot.png)
+
 A modern, responsive portfolio website showcasing my skills, projects, and contact information as a Computer Science student specializing in systems programming and security.
 
 ## Features
