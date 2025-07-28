@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Dharsan B</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Dharsan B</span></h1>
+                <h2>Student</h2>
+                <p>I'm Dharsan B, an Engineering student with a passion for both technology and sports. When I'm not coding backend systems or exploring Linux security, you'll find me on the football field, cricket pitch, or watching F1 races. I love the strategic thinking required in both competitive programming and competitive sports, and I'm always eager to learn new things - whether it's a programming language or a sport technique.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="images/profile.jpg" alt="Your Name">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm Dharsan B, a systems programming enthusiast specializing in Golang and eBPF. I contribute to open-source security tools and build container security solutions using Linux kernel technologies. When not working on low-level systems, I enjoy solving complex DSA problems and competitive programming. My passion lies at the intersection of infrastructure security and high-performance computing. Always eager to collaborate on meaningful technical challenges.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <p><span>Name:</span> Dharsan B</p>
+                            <p><span>Email:</span> bdharsan79@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <p><span>Education:</span> B.Tech (Year 3)</p>
+                            <p><span>Location:</span> Varanasi, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <a href="resume.pdf" class="btn" download>Download Resume</a>
+                </div>
+                <div class="about-img">
+                    <img src="images/profile.jpg" alt="Your Name">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- OCI Hook Project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/oci-hook.jpg" alt="OCI Hook with AppArmor">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>OCI Hook to Load AppArmor Profile</h3>
+                        <p>Developed a solution to enhance container security by automatically loading AppArmor profiles onto containers using a precreate OCI Hook. The security policies were defined using KubeArmor, a CNCF Sandbox project.</p>
+                        <div class="project-tech">
+                            <span>Docker</span>
+                            <span>KubeArmor</span>
+                            <span>AppArmor</span>
+                            <span>eBPF</span>
+                            <span>OCI Hooks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- eBPF Kubernetes Audit Logging -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/ebpf-audit.jpg" alt="eBPF Kubernetes Audit Logging">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>eBPF-Powered Kubernetes Audit Logging</h3>
+                        <p>Created a Golang-based tool that uses eBPF to capture detailed audit logs of Kubernetes workloads including system calls, file access, and network activity. Implemented centralized storage and analysis in Elasticsearch.</p>
+                        <div class="project-tech">
+                            <span>eBPF</span>
+                            <span>Golang</span>
+                            <span>Kubernetes</span>
+                            <span>Elasticsearch</span>
+                            <span>Logging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>bdharsan79@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91-8610338234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Varanasi, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/bdharsan04"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/b-dharsan-91b7b0258/"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <small class="error-message">Name is required</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <small class="error-message">Valid email is required</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <small class="error-message">Subject is required</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <small class="error-message">Message is required</small>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="formSuccess" class="form-success">Message sent successfully!</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Dharsan B. All rights reserved.</p>
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
