@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Sticky Navigation
     const navbar = document.getElementById('navbar');
     const backToTop = document.querySelector('.back-to-top');
     
@@ -30,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Active Navigation Link
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-links a');
     
@@ -54,10 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Current Year in Footer
     document.getElementById('year').textContent = new Date().getFullYear();
     
-    // Contact Form Validation
     const contactForm = document.getElementById('contactForm');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
@@ -69,51 +63,41 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         let isValid = true;
         
-        // Reset error messages
         document.querySelectorAll('.error-message').forEach(msg => {
             msg.style.display = 'none';
         });
         
-        // Validate Name
         if (nameInput.value.trim() === '') {
             nameInput.nextElementSibling.style.display = 'block';
             isValid = false;
         }
         
-        // Validate Email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailInput.value.trim())) {
             emailInput.nextElementSibling.style.display = 'block';
             isValid = false;
         }
         
-        // Validate Subject
         if (subjectInput.value.trim() === '') {
             subjectInput.nextElementSibling.style.display = 'block';
             isValid = false;
         }
         
-        // Validate Message
         if (messageInput.value.trim() === '') {
             messageInput.nextElementSibling.style.display = 'block';
             isValid = false;
         }
         
-        // If form is valid
         if (isValid) {
-            // In a real application, you would send the form data to a server here
-            // For demonstration, we'll just show a success message
             formSuccess.style.display = 'block';
             contactForm.reset();
             
-            // Hide success message after 3 seconds
             setTimeout(() => {
                 formSuccess.style.display = 'none';
             }, 3000);
         }
     });
     
-    // Smooth scrolling for all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
